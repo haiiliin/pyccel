@@ -1393,7 +1393,7 @@ class FCodePrinter(CodePrinter):
             if isinstance(expr_dtype, NativeString):
 
                 if intent_in:
-                    dtype = dtype[:9] +'(len =*)'
+                    dtype = dtype[:9] +'(len =280)'
                     #TODO improve ,this is the case of character as argument
             elif isinstance(expr_dtype, BindCPointer):
                 dtype = 'type(c_ptr)'
